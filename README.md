@@ -1,0 +1,2 @@
+This repo contains challenges from frontendmentor.io. All credit for the content goes to their company. The designs are by me and draw inspiration from a variety of sources.
+If any given challenge is hosted by me anywhere, the name of the challenge as well as the link to that challenge's live code will be below.
