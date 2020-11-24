@@ -1,0 +1,109 @@
+:root {
+    --bg-violet: hsl(273, 75%, 66%);
+    --bg-blue: hsl(240, 73%, 65%);
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--bg-violet), var(--bg-blue));
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card-wrapper {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: #fff;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-position-y: -300px;
+    background-position-x: -564px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+}
+
+.img-wrapper {
+    display: inline-block;
+    height: 100%;
+}
+
+.presentation {
+    margin-left: -70px;
+    margin-top: 70px;
+}
+
+.cube {
+    position: absolute;
+    left: -93px;
+    top: 200px;
+    z-index: 10;
+}
+
+.faq-container {
+    display: inline-block;
+    z-index: 20;
+    vertical-align: top;
+    flex: 1;
+    padding: 4rem;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.faq-container h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.question {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 1rem;
+    padding-left: 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: max-height 0.4s ease-in;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.active,
+.question:hover {
+    background-color: #ccc;
+}
+
+.panel {
+  padding: 0 1rem;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  line-height: 1.25rem;
+}
+
+.question-arrow {
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
